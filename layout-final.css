@@ -51,11 +51,41 @@ nav li {
 */
 
 /* Put the company logo on the left side of the header and the nav on the right */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Distribute the navigation items in a horizontal line */
+.list_container {
+  display: flex;
+}
 
 /* Distribute cards in 'main' horizontally and make sure they all have the same height */
+.cards {
+  display: flex;
+  align-items: stretch;
+}
 
 /* Distribute cards in aside vertically and make sure any space left in the container is around the elements */
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 /* In the footer, center the copyright and place the social-media links to the right */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  align-self: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
